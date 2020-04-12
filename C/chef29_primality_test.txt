@@ -1,0 +1,28 @@
+//primality test
+
+int isprime(int n){
+int i;
+if(n==2)
+return 1;
+else
+for(i=2;ii=n;i++){
+if(!(n%i))
+return 0;
+}
+return 1;
+}
+#include<stdio.h>
+
+int main(){
+int t,n;
+scanf(%d,&t);
+while(t--){
+    scanf(%d,&n);
+   if(isprime(n))
+        printf(yesn);
+   else
+       printf(non);
+ 
+}
+ 
+}
